@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.linkedin.com/in/laxnb/</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.crunchbase.com/person/laxmi-narayan-behera</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.credly.com/users/laxnb</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://theorg.com/org/lnbfederal/org-chart/laxminbehera</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://github.com/theyottaboy</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://laxminarayanbehera.com</loc>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
@@ -71,27 +96,12 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.crunchbase.com/person/laxmi-narayan-behera</loc>
-    <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://theorg.com/org/lnbfederal/org-chart/laxminbehera</loc>
-    <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://github.com/theyottaboy</loc>
-    <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://www.youtube.com/@theyottaboy</loc>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.linkedin.com/in/laxnb/</loc>
+    <loc>https://www.flickr.com/photos/theyottaboy92</loc>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
