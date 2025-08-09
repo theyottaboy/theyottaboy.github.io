@@ -24,32 +24,34 @@
       text-align: center;
       z-index: 9999;
       height: 100vh;
+      transition: opacity 2s ease;
       }
       #seal {
-      width: 300px;
+      width: 200px;
       opacity: 0;
       transition: opacity 2s ease;
       filter:
-      drop-shadow(0 0 12px rgba(255,255,255,0.25))
-      drop-shadow(0 0 20px rgba(255,255,255,0.15));
+      drop-shadow(0 0 12px rgba(255,255,255,0.4))
+      drop-shadow(0 0 25px rgba(255,255,255,0.25));
       user-select: none;
       }
       #name {
-      font-size: 3rem;
+      font-size: 1.5rem;
       font-weight: 700;
       color: white;
-      filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
+      filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
       opacity: 0;
       transition: opacity 2s ease;
       margin-top: 30px;
       }
       #main {
+      opacity: 0;
+      transition: opacity 2s ease;
       display: none;
       height: 100vh;
       background: #000000;
       color: white;
       font-family: 'Helvetica', Arial, sans-serif;
-      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -59,7 +61,7 @@
       }
       #clock {
       font-family: monospace, 'Helvetica', Arial, sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.0rem;
       letter-spacing: 0.2em;
       margin-bottom: 1.5rem;
       text-shadow: 0 0 10px rgba(255,255,255,0.3);
@@ -121,13 +123,13 @@
       setTimeout(() => {
         splashEl.style.opacity = '0';
         splashEl.style.pointerEvents = 'none';
+        mainEl.style.display = 'flex';
         setTimeout(() => {
-          splashEl.style.display = 'none';
-          mainEl.style.display = 'flex';
+          mainEl.style.opacity = '1';
           quoteEl.textContent = chosenQuote;
           document.body.style.overflow = 'auto';
           startClock();
-        }, 2000);
+        }, 100);
       }, 9000);
       
       function startClock() {
