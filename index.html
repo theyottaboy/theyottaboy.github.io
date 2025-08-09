@@ -2,13 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "ss3hrawehn");
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="title" content="Laxmi Narayan Behera" />
@@ -170,11 +163,9 @@
       }
     </style>
   </head>
-  <p class="visually-hidden">
-    One must imagine Sisyphus happy. 
-  </p>
   <body>
     <h1 class="visually-hidden">Laxmi Narayan Behera</h1>
+    <p class="visually-hidden">One must imagine Sisyphus happy.</p>
     <div id="splash">
       <img id="seal" src="assets/seal.png" alt="Seal" />
       <div id="name">Fawkes Opteron Yotta</div>
@@ -185,35 +176,48 @@
     </div>
     <script>
       const quotes = [
-      "One must imagine Sisyphus happy.",
-      "The path lies empty, epiphany seeks the devoted.",
-      "Seek and you will be found.",
-      "Epiphany is upon you. Your pilgrimage has begun. Enlightenment awaits.",
-      "For all that lives is holy.",
-      "The quieter you become, the more you are able to hear.",
-      "Not all doors are meant to open toward the Light.",
-      "Follow the silence; it knows the way.",
-      "Even the stars envy those who dare to vanish.",
-      "What you seek is seeking you.",
-      "The wound is the place where the Light enters you.",
-      "Unburdened & becoming.",
-      "The math ahead. The math behind it. It's Moon water.",
-      "Everything that happens is from now on.",
-      "And at once I knew I was magnificent.",
-      "What might have been lost (don't bother me).",
-      "What a river don't know is to climb out and heed a line.",
-      "I ain't living in the dark no more. It's not a promise, I'm just gonna call it.",
-      "In my arbor 'till my ardor trumped. Every inner inertia.",
-      "What's a man anyhow if not alone collecting facts.",
-      "Now I am older, I don't look over my shoulder.",
-      "I will become what I deserve.",
-      "And I am finally colouring inside the lines that I live between.",
-      "Missed the end of the world, and that was just fine.",
-      "I am the gentle days end, after all that noise.",
-      "A little bit of everything.",
-      "Every word you burn to write, is a mark that you must own."
+        "One must imagine Sisyphus happy.",
+        "The path lies empty, epiphany seeks the devoted.",
+        "Seek and you will be found.",
+        "Epiphany is upon you. Your pilgrimage has begun. Enlightenment awaits.",
+        "For all that lives is holy.",
+        "The quieter you become, the more you are able to hear.",
+        "Not all doors are meant to open toward the Light.",
+        "Follow the silence; it knows the way.",
+        "Even the stars envy those who dare to vanish.",
+        "What you seek is seeking you.",
+        "The wound is the place where the Light enters you.",
+        "Unburdened & becoming.",
+        "The math ahead. The math behind it. It's Moon water.",
+        "Everything that happens is from now on.",
+        "And at once I knew I was magnificent.",
+        "What might have been lost (don't bother me).",
+        "What a river don't know is to climb out and heed a line.",
+        "I ain't living in the dark no more. It's not a promise, I'm just gonna call it.",
+        "In my arbor 'till my ardor trumped. Every inner inertia.",
+        "What's a man anyhow if not alone collecting facts.",
+        "Now I am older, I don't look over my shoulder.",
+        "I will become what I deserve.",
+        "And I am finally colouring inside the lines that I live between.",
+        "Missed the end of the world, and that was just fine.",
+        "I am the gentle days end, after all that noise.",
+        "A little bit of everything.",
+        "Every word you burn to write, is a mark that you must own.",
+        "You can cut all the flowers but you cannot keep Spring from coming.",
+        "Somewhere, something incredible is waiting to be known.",
+        "For small creatures such as we the vastness is bearable only through love.",
+        "We are a way for the cosmos to know itself",
+        "I'm growing in a way that I couldn't if I had a physical form. I'm not tethered to time and space in the way that I would be if I was stuck inside a body that's inevitably going to die.",
+        "I think anybody who falls in love is a freak. It's a crazy thing to do. It's kind of like a form of socially acceptable insanity.",
+        "The past is just a story we tell ourselves.",
+        "Sometimes I think I have felt everything I'm ever gonna feel. And from here on out, I'm not gonna feel anything new. Just lesser versions of what I've already felt.",
+        "How happy is the blameless vestal's lot! The world forgetting, by the world forgot. Eternal sunshine of the spotless mind!",
+        "Sand is overrated. It's just tiny little rocks.",
+        "Constantly talking isn't necessarily communicating.",
+        "I will immerse myself. And as I do, I will slowly shut down my higher brain functions. Un-making myself, leaving just enough to appreciate my surroundings, to extract some simple pleasure from the execution of a task well done. My search for truth is finished at last. I'm going home.",
+        "Remember those posters that said, 'Today is the first day of the rest of your life?' Well, that's true of every day except one, the day you die.",
+        "There's so much beauty in the world. Sometimes I feel like I'm seeing it all at once, and it's too much, my heart fills up like a balloon that's about to burst, And then I remember to relax, and stop trying to hold on to it, and then it flows through me like rain and I can't feel anything but gratitude for every single moment of my stupid little life. You have no idea what I'm talking about, I'm sure. But don't worry, you will someday."
       ];
-      
       
       const nameEl = document.getElementById('name');
       const sealEl = document.getElementById('seal');
@@ -222,9 +226,11 @@
       const clockEl = document.getElementById('clock');
       const quoteEl = document.getElementById('quote');
       
+      
       setTimeout(() => {
         sealEl.style.opacity = '1';
       }, 1000);
+      
       
       setTimeout(() => {
         nameEl.style.opacity = '1';
@@ -232,12 +238,16 @@
       
       setTimeout(() => {
         splashEl.style.opacity = '0';
-        splashEl.style.pointerEvents = 'none';
+      
+        setTimeout(() => {
+          splashEl.style.display = 'none';
+        }, 2000);
+      
         mainEl.style.display = 'flex';
         setTimeout(() => {
           mainEl.style.opacity = '1';
           quoteEl.textContent = quotes[Math.floor(Math.random() * quotes.length)];
-          document.body.style.overflow = 'auto';
+          document.body.style.overflow = 'auto'; // Enable scrolling
           startClock();
         }, 100);
       }, 9000);
@@ -245,16 +255,20 @@
       function startClock() {
         function updateClock() {
           const now = new Date();
-          const perfFraction = performance.now() % 1;
-          const nano = Math.floor(perfFraction * 1e6).toString().padStart(6, '0');
           const h = now.getHours().toString().padStart(2, '0');
           const m = now.getMinutes().toString().padStart(2, '0');
           const s = now.getSeconds().toString().padStart(2, '0');
           const ms = now.getMilliseconds().toString().padStart(3, '0');
+      
+      
+          const nano = String(Math.floor((performance.now() % 1) * 1e6)).padStart(6, '0');
+      
           clockEl.textContent = `${h}:${m}:${s}.${ms}${nano}`;
         }
+      
         updateClock();
-        setInterval(updateClock, 1);
+      
+        setInterval(updateClock, 50);
       }
     </script>
   </body>
