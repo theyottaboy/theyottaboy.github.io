@@ -1,152 +1,149 @@
+<!-- Fawkes Opteron Yotta -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Laxmi Narayan Behera / Fawkes Opteron Yotta</title>
-<style>
-  html, body {
-    margin: 0; padding: 0;
-    height: 100%;
-    background: #000000;
-    font-family: 'Helvetica', Arial, sans-serif;
-    overflow: hidden;
-  }
-  #splash {
-    position: fixed;
-    inset: 0;
-    background: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 9999;
-    height: 100vh;
-  }
-  #seal {
-    width: 300px;
-    opacity: 0;
-    transition: opacity 2s ease;
-    filter:
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laxmi Narayan Behera / Fawkes Opteron Yotta</title>
+    <style>
+      html, body {
+      margin: 0; padding: 0;
+      height: 100%;
+      background: #000000;
+      font-family: 'Helvetica', Arial, sans-serif;
+      overflow: hidden;
+      }
+      #splash {
+      position: fixed;
+      inset: 0;
+      background: #000000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 9999;
+      height: 100vh;
+      }
+      #seal {
+      width: 300px;
+      opacity: 0;
+      transition: opacity 2s ease;
+      filter:
       drop-shadow(0 0 12px rgba(255,255,255,0.25))
       drop-shadow(0 0 20px rgba(255,255,255,0.15));
-    user-select: none;
-  }
-  #name {
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-    filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
-    opacity: 0;
-    transition: opacity 2s ease;
-    margin-top: 30px;
-  }
-  #main {
-    display: none;
-    height: 100vh;
-    background: #000000;
-    color: white;
-    font-family: 'Helvetica', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    user-select: none;
-    text-align: center;
-  }
-  #clock {
-    font-family: monospace, 'Helvetica', Arial, sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 0.2em;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 0 10px rgba(255,255,255,0.3);
-    color: white;
-  }
-  #quote {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.3rem;
-    max-width: 600px;
-    opacity: 0.85;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 1.4;
-    color: white;
-  }
-</style>
-</head>
-<body>
-
-<div id="splash">
-  <img id="seal" src="assets/seal.png" alt="Seal" />
-  <div id="name">Fawkes Opteron Yotta</div>
-</div>
-
-<div id="main">
-  <div id="clock">00:00:00.000000000</div>
-  <div id="quote"></div>
-</div>
-
-<script>
-  const quotes = [
-    "One must imagine Sisyphus happy.",
-    "The path lies empty, epiphany seeks the devoted.",
-    "Seek and you will be found.",
-    "Epiphany is upon you. Your pilgrimage has begun. Enlightenment awaits.",
-    "For all that lives is holy.",
-    "The quieter you become, the more you are able to hear.",
-    "Not all doors are meant to open toward the light.",
-    "Follow the silence; it knows the way.",
-    "Even the stars envy those who dare to vanish.",
-    "What you seek is seeking you.",
-    "The wound is the place where the light enters you."
-  ];
-
-  const chosenQuote = quotes[Math.floor(Math.random() * quotes.length)];
-
-  const nameEl = document.getElementById('name');
-  const sealEl = document.getElementById('seal');
-  const splashEl = document.getElementById('splash');
-  const mainEl = document.getElementById('main');
-  const clockEl = document.getElementById('clock');
-  const quoteEl = document.getElementById('quote');
-
-  setTimeout(() => {
-    sealEl.style.opacity = '1';
-  }, 1000);
-
-  setTimeout(() => {
-    nameEl.style.opacity = '1';
-  }, 5000);
-
-  setTimeout(() => {
-    splashEl.style.opacity = '0';
-    splashEl.style.pointerEvents = 'none';
-    setTimeout(() => {
-      splashEl.style.display = 'none';
-      mainEl.style.display = 'flex';
-      quoteEl.textContent = chosenQuote;
-      document.body.style.overflow = 'auto';
-      startClock();
-    }, 2000);
-  }, 9000);
-
-  function startClock() {
-    function updateClock() {
-      const now = new Date();
-      const perfFraction = performance.now() % 1;
-      const nano = Math.floor(perfFraction * 1e6).toString().padStart(6, '0');
-      const h = now.getHours().toString().padStart(2, '0');
-      const m = now.getMinutes().toString().padStart(2, '0');
-      const s = now.getSeconds().toString().padStart(2, '0');
-      const ms = now.getMilliseconds().toString().padStart(3, '0');
-      clockEl.textContent = `${h}:${m}:${s}.${ms}${nano}`;
-    }
-    updateClock();
-    setInterval(updateClock, 1);
-  }
-</script>
-
-</body>
+      user-select: none;
+      }
+      #name {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+      filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
+      opacity: 0;
+      transition: opacity 2s ease;
+      margin-top: 30px;
+      }
+      #main {
+      display: none;
+      height: 100vh;
+      background: #000000;
+      color: white;
+      font-family: 'Helvetica', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      user-select: none;
+      text-align: center;
+      }
+      #clock {
+      font-family: monospace, 'Helvetica', Arial, sans-serif;
+      font-size: 2.5rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+      color: white;
+      }
+      #quote {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 1.3rem;
+      max-width: 600px;
+      opacity: 0.85;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.4;
+      color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="splash">
+      <img id="seal" src="assets/seal.png" alt="Seal" />
+      <div id="name">Fawkes Opteron Yotta</div>
+    </div>
+    <div id="main">
+      <div id="clock">00:00:00.000000000</div>
+      <div id="quote"></div>
+    </div>
+    <script>
+      const quotes = [
+        "One must imagine Sisyphus happy.",
+        "The path lies empty, epiphany seeks the devoted.",
+        "Seek and you will be found.",
+        "Epiphany is upon you. Your pilgrimage has begun. Enlightenment awaits.",
+        "For all that lives is holy.",
+        "The quieter you become, the more you are able to hear.",
+        "Not all doors are meant to open toward the light.",
+        "Follow the silence; it knows the way.",
+        "Even the stars envy those who dare to vanish.",
+        "What you seek is seeking you.",
+        "The wound is the place where the light enters you."
+      ];
+      
+      const chosenQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      
+      const nameEl = document.getElementById('name');
+      const sealEl = document.getElementById('seal');
+      const splashEl = document.getElementById('splash');
+      const mainEl = document.getElementById('main');
+      const clockEl = document.getElementById('clock');
+      const quoteEl = document.getElementById('quote');
+      
+      setTimeout(() => {
+        sealEl.style.opacity = '1';
+      }, 1000);
+      
+      setTimeout(() => {
+        nameEl.style.opacity = '1';
+      }, 5000);
+      
+      setTimeout(() => {
+        splashEl.style.opacity = '0';
+        splashEl.style.pointerEvents = 'none';
+        setTimeout(() => {
+          splashEl.style.display = 'none';
+          mainEl.style.display = 'flex';
+          quoteEl.textContent = chosenQuote;
+          document.body.style.overflow = 'auto';
+          startClock();
+        }, 2000);
+      }, 9000);
+      
+      function startClock() {
+        function updateClock() {
+          const now = new Date();
+          const perfFraction = performance.now() % 1;
+          const nano = Math.floor(perfFraction * 1e6).toString().padStart(6, '0');
+          const h = now.getHours().toString().padStart(2, '0');
+          const m = now.getMinutes().toString().padStart(2, '0');
+          const s = now.getSeconds().toString().padStart(2, '0');
+          const ms = now.getMilliseconds().toString().padStart(3, '0');
+          clockEl.textContent = `${h}:${m}:${s}.${ms}${nano}`;
+        }
+        updateClock();
+        setInterval(updateClock, 1);
+      }
+    </script>
+  </body>
 </html>
