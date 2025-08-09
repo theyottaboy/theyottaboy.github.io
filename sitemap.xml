@@ -1,108 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://www.linkedin.com/in/laxnb/</loc>
-    <priority>1.0</priority>
+    <loc>https://lnbfederal.com</loc>
+    <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>https://www.crunchbase.com/person/laxmi-narayan-behera</loc>
-    <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.credly.com/users/laxnb</loc>
-    <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://theorg.com/org/lnbfederal/org-chart/laxminbehera</loc>
-    <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://github.com/theyottaboy</loc>
-    <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
-  </url>
+
   <url>
     <loc>https://laxminarayanbehera.com</loc>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
+
+  <url>
+    <loc>https://www.linkedin.com/in/laxnb/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.crunchbase.com/person/laxmi-narayan-behera</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.credly.com/users/laxnb</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://theorg.com/org/lnbfederal/org-chart/laxminbehera</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://github.com/theyottaboy</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
   <url>
     <loc>https://theyottaboy.com</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://fawkesopteronyotta.com</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://www.goodreads.com/theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://m.imdb.com/user/ur75602490/?ref_=uspf_usr_ov</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://x.com/theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://medium.com/@theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://www.f6s.com/member/theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://hackernoon.com/u/theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://vimeo.com/theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://wellfound.com/u/theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://www.behance.net/theyottaboy/appreciated</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://myanimelist.net/profile/theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://soundcloud.com/theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://www.youtube.com/@theyottaboy</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://www.flickr.com/photos/theyottaboy92</loc>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+
 </urlset>
