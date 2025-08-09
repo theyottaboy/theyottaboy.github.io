@@ -1,8 +1,9 @@
 User-agent: Googlebot
 Disallow: /assets/
-
+Disallow: /seal.img
+Disallow: /seal.png
 User-agent: Bingbot
 Disallow: /assets/
-
+Disallow: /seal.png
 User-agent: *
 Disallow: /
