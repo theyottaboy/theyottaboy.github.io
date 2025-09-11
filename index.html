@@ -99,15 +99,6 @@
             height: 100vh;
             transition: opacity 2s ease;
             }
-            #seal {
-            width: 200px;
-            opacity: 0;
-            transition: opacity 2s ease;
-            filter:
-            drop-shadow(0 0 12px rgba(255,255,255,0.4))
-            drop-shadow(0 0 25px rgba(255,255,255,0.25));
-            user-select: none;
-            }
             #name {
             font-size: 1.5rem;
             font-weight: 700;
@@ -167,7 +158,6 @@
         <h1 class="visually-hidden">Laxmi Narayan Behera</h1>
         <p class="visually-hidden">One must imagine Sisyphus happy.</p>
         <div id="splash">
-            <img id="seal" src="assets/seal.png" alt="" />
             <div id="name">Fawkes Opteron Yotta</div>
         </div>
         <div id="main">
@@ -227,23 +217,15 @@
             "We are like butterflies who flutter for a day and think it is forever."
             ];
             
-            
             const nameEl = document.getElementById('name');
-            const sealEl = document.getElementById('seal');
             const splashEl = document.getElementById('splash');
             const mainEl = document.getElementById('main');
             const clockEl = document.getElementById('clock');
             const quoteEl = document.getElementById('quote');
             
-            
-            setTimeout(() => {
-              sealEl.style.opacity = '1';
-            }, 1000);
-            
-            
             setTimeout(() => {
               nameEl.style.opacity = '1';
-            }, 5000);
+            }, 1000);
             
             setTimeout(() => {
               splashEl.style.opacity = '0';
@@ -259,7 +241,7 @@
                 document.body.style.overflow = 'auto'; // Enable scrolling
                 startClock();
               }, 100);
-            }, 9000);
+            }, 5000);
             
             function startClock() {
               function updateClock() {
@@ -268,15 +250,12 @@
                 const m = now.getMinutes().toString().padStart(2, '0');
                 const s = now.getSeconds().toString().padStart(2, '0');
                 const ms = now.getMilliseconds().toString().padStart(3, '0');
-            
-            
                 const nano = String(Math.floor((performance.now() % 1) * 1e6)).padStart(6, '0');
             
                 clockEl.textContent = `${h}:${m}:${s}.${ms}${nano}`;
               }
             
               updateClock();
-            
               setInterval(updateClock, 50);
             }
         </script>
